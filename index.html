@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOUL'S DINING</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./javascript/project.js"></script>
 </head>
 <body>
     <div class="container"> 
     <!--Navigation bar on every page-->
     <div class="navbar"> 
-        <img src="images/logo.jpg" alt="Logo" id="logo">
+            <img src="images/logo.jpg" alt="Logo" id="logo">
         <div>
             <div class="nav">        
              <a id="home" href="index.html">HOME</a>
@@ -43,12 +43,12 @@
         <div class="signup">
             <p>Create your free account</p>
             <input type="text" id="name" placeholder="User name" data-type="text"><b>
-            <input type="text" id="email" placeholder="E-mail" data-type="email" required><br>
+            <input type="text" id="email" placeholder="E-mail" data-type="email" required="true"><br>
             <input type="password" id="password" placeholder="Password (8 characters)" minlength="8" data-type="password" required="true"><br>
-            <button type="submit" id="acc" value="">Create Account</button><br>
+            <button type="submit" id="acc" onclick="createAccount()">Create Account</button><br>
             <p>OR</p>
-            <button type="submit" id="gsignup" value="">Sign up with Google</button><br>
-            <button type="submit" id="fsignup" value="">Sign up with Facebook</button><br>
+            <button type="submit" id="gsignup" onclick="googleSignup()">Sign up with Google</button><br>
+            <button type="submit" id="fsignup" onclick="fbSignup()">Sign up with Facebook</button><br>
 
 
         </div>
