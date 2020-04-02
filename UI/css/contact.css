@@ -1,0 +1,119 @@
+/* Coded by Jacinta */
+
+
+.contact-form{
+    width: 85%;
+    max-width: 600px; 
+    /* background: #F1F1F1; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%-50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+}
+.contactformh1{
+    margin-top: 0;
+    font-weight: 200;
+}
+.txtb{
+    border: 1px #FFFF00;
+    margin: 8px 0;
+    padding: 12x 18px; 
+    border-radius: 8px;
+}
+.txtb label{
+    display: block;
+    text-align: left;
+    color: #333; 
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.txtb input, .textarea{
+width: 100%;
+border: none;
+background: none;
+outline: none;
+font-size: 18px;
+margin-top: 6px;
+}
+.btn{
+    display: inline-block;
+    background: #FFFF00;
+    padding: 10px;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+} 
+
+    body{
+        background-repeat: no-repeat;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+        margin: 0;
+    }
+    
+    /* Style the navigation bar */
+    .navbar{
+        overflow: hidden;
+        background-color:yellow ;
+        display: flex;
+        height: 20%;
+        width: 100%;
+        top: 0;
+    }
+    
+    /* style the restaurant logo */
+    #logo{
+        width: 130px;
+        height:130px;
+        border-radius: 60px;
+        margin-right: 30%;
+         
+    }
+    
+    .nav{
+        padding-top: 10%;
+    }
+    
+    /* style the links to the different pages */
+    .nav a{
+        text-decoration: none;
+        color: tomato;
+        font-weight: bold;
+        font-style: italic;
+        margin-right: 50px;
+        text-align: center;
+        padding-top: 100%;
+    }
+    
+    .nav a:hover{
+    color: green; /* Navbar anchors/links change to green on-mouse hover*/
+    }
+
+    
+    button{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 15px;
+    width: 50%;
+    
+    }
+    
+    
+    /*media query for small devices like phones (responsiveness)*/
+    @media only screen and (max-width: 736px) {
+        body {
+                width: 300px;        
+                height: 736px;       
+            }
+        }
+      
