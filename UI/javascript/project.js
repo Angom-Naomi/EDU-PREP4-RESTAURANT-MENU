@@ -21,9 +21,7 @@ function createAccount(){
 
         else {
             alert("Your account has been created successfully......");
-            window.location.href="../menu.html";
-            return true;
-            
+            window.location.href="templates/menu.html"; 
         }
 };
 
@@ -51,8 +49,8 @@ function googleSignup(){
 
     else {
         alert("Your account has been created successfully......");
-        window.location.href="../menu.html";
-        return true;
+        window.location.href="templates/menu.html";
+       
         
     }
 };
@@ -80,8 +78,8 @@ function fbSignup(){
 
     else {
         alert("Your account has been created successfully......");
-        window.location.href="../menu.html";
-        return true;
+        window.location.href="templates/menu.html";
+     
         
     }
 };
