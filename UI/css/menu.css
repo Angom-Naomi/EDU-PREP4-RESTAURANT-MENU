@@ -46,7 +46,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /* style the main page content */
 .page-content{
     background-repeat: no-repeat;
-    background-image: repeating-linear-gradient(45deg, maroon, gray, );   
+    background-image: repeating-linear-gradient(45deg,skyblue, gray, skyblue );   
     background-size: cover;
     display: flex;
     height: 60%;
