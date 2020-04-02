@@ -41,7 +41,7 @@ To clone this project on your local machine, go to [GitHub](https://github.com/A
    Click on LOGIN in the navigation bar, fill in the fields and login.
    
 3.To make your order
-   Click on MENU in the navigation bar, add or remove items on your menu, view your bill, and click the Make Order button to confirm your purchase. 
+   Click on MENU in the navigation bar, add or remove items on your menu, and click the Make Order button to confirm your purchase. 
    
 4. To view the gallery
    Click on GALLERY in the navigation bar to view the photos
@@ -64,11 +64,11 @@ To clone this project on your local machine, go to [GitHub](https://github.com/A
 - Zoom and Slack
 
 ## Resources
--[w3 schools](https://www.w3schools.com)
--[FreeCodeCamp](https://www.freecodecamp.org)
--[Mozilla MDN](https://developer.mozilla.org)
--[Git version control](https://git-scm.com/)
--[Pivotal Tracker](https://www.pivotaltracker.com)
+- [w3 schools](https://www.w3schools.com)
+- [FreeCodeCamp](https://www.freecodecamp.org)
+- [Mozilla MDN](https://developer.mozilla.org)
+- [Git version control](https://git-scm.com/)
+- [Pivotal Tracker](https://www.pivotaltracker.com)
 
 ## Contributors
 Deborah Angom | Jacinta Naturinda  
