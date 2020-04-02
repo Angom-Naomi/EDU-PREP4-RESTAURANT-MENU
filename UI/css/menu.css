@@ -46,31 +46,89 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /* style the main page content */
 .page-content{
     background-repeat: no-repeat;
-    background-image: url(/UI/images/menu.jpg);
+    background-image: url(/UI/images/landingpic.jpg);
+    background-color: rgb(197, 84, 31);
     background-size: cover;
     display: flex;
     height: 60%;
     padding: 20px;
-    display: flex;
+    display: block;
+}
+
+.top-content p{
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+#searchBox{
+    width: 50%;
+    height: 7%;
+    border:white;
+    border-style: solid;
+    padding: 3px;
+    float: left;
+}
+
+#searchBtn{
+width: 5%;
+padding: 3px;
+height: 7%;
+border-radius: 1%;
+border-color: black;
+background-color: wheat;
 }
 
 .left-content{
-    background-color: green;
+    width: 50%;
+    float: left;
 }
 
 .right-content{
-    background-color: blue;
+    width: 50%;
+    float: right;
 }
 
-button{
-color: black;
-font-weight: bold;
-margin-bottom: 10px;
-background-color: tomato;
-padding: 10px;
-border-radius: 15px;
-width: 50%;
+p {
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 15px;   
+    font-weight: bold; 
+}
 
+li{
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.bottom-content{
+    width: 100%;
+    justify-content: center;
+    
+}
+
+#orderBtn{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 15px;
+    width: 20%;
+    margin-top: 10px;
+    margin-left: 400px;
+}
+
+#cancelBtn{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 15px;
+    width: 20%;
+    margin-top: 10px;
 }
 
 /* style the footer */
