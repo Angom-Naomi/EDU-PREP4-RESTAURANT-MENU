@@ -46,8 +46,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /* style the main page content */
 .page-content{
     background-repeat: no-repeat;
-    background-image: url(/UI/images/landingpic.jpg);
-    background-color: rgb(197, 84, 31);
+    background-image: repeating-linear-gradient(45deg, maroon, gray, );   
     background-size: cover;
     display: flex;
     height: 60%;
@@ -59,6 +58,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
     font-size: medium;
     font-weight: bold;
     text-align: center;
+    font-size: 20px;
 }
 
 #searchBox{
@@ -92,14 +92,15 @@ background-color: wheat;
 p {
     text-align: justify;
     line-height: 1.5;
-    font-size: 15px;   
+    font-size: 20px;   
     font-weight: bold; 
+    color: black;
 }
 
 li{
-    font-size: 15px;
+    font-size: 20px;
     font-weight: bold;
-
+    color: black;
 }
 
 .bottom-content{
