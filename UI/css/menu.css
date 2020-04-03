@@ -46,15 +46,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /* style the main page content */
 .page-content{
     background-repeat: no-repeat;
-<<<<<<< HEAD
-    background-image: repeating-linear-gradient(45deg, maroon, gray, );   
-=======
     background-image: repeating-linear-gradient(45deg,skyblue, gray, skyblue );   
-<<<<<<< HEAD
->>>>>>> ft-create-home-page-with-signup-172018175
-=======
->>>>>>> c99f6117d71ed4d1323be673e6035a60bef27c94
->>>>>>> ft-menu-page-171996894
     background-size: cover;
     display: flex;
     height: 60%;
@@ -109,19 +101,11 @@ li{
     font-size: 20px;
     font-weight: bold;
     color: black;
-<<<<<<< HEAD
 }
 
 .bottom-content{
     width: 100%;
     justify-content: center;
-    
-=======
-<<<<<<< HEAD
->>>>>>> ft-create-home-page-with-signup-172018175
-=======
->>>>>>> c99f6117d71ed4d1323be673e6035a60bef27c94
->>>>>>> ft-menu-page-171996894
 }
 
 .addBtn, .removeBtn{
