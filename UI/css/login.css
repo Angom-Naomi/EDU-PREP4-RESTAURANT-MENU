@@ -6,6 +6,8 @@ body{
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
+    background-image: repeating-linear-gradient(45deg,skyblue, gray, skyblue );   
+
 }
 
 /*** h1****/
@@ -37,17 +39,19 @@ h1{
     font-size: 16px;
 }
 .loginbox input[type="submit"]{
-    border: none;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: tomato;
+    padding: 10px;
+    border-radius: 15px;
+    width: 20%;
+    margin-top: 10px;
     outline: none;
-    height: 40px;
-    background: #ff00;
-    color: #fff;
-    font-size: 18px;
-    border-radius: 20px;
 }
 .loginbox input[type="submit"]:hover{
     cursor: pointer;
-    background: #FFC107;
+    background: green;
     line-height: 20px;
     color: #000;
 }
@@ -55,11 +59,11 @@ h1{
     text-decoration: none;
     font-size: 12px;
     line-height: 20px;
-    color: #F5DEB3;
-    
+    color: #000;
 }
 .loginbox a:hover{
-    color: #000;
+    color: #F5DEB3;
+
 }
 
 
@@ -70,6 +74,10 @@ body{
     margin: 0;
 }
 
+form{
+    padding: 20px;
+    display: block;
+}
 /* Style the navigation bar */
 .navbar{
     overflow: hidden;

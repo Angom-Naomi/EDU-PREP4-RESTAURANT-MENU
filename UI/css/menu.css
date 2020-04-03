@@ -103,33 +103,28 @@ li{
     color: black;
 }
 
-.bottom-content{
-    width: 100%;
-    justify-content: center;
-    
+.addBtn, .removeBtn{
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: rgb(2, 158, 158);
+    padding: 5px;
+    border-radius: 15px;
+    width: 12%;
+
 }
 
-#orderBtn{
+
+.orderBtn{
     color: black;
     font-weight: bold;
     margin-bottom: 10px;
     background-color: tomato;
     padding: 10px;
     border-radius: 15px;
-    width: 20%;
+    width: 15%;
     margin-top: 10px;
     margin-left: 400px;
-}
-
-#cancelBtn{
-    color: black;
-    font-weight: bold;
-    margin-bottom: 10px;
-    background-color: tomato;
-    padding: 10px;
-    border-radius: 15px;
-    width: 20%;
-    margin-top: 10px;
 }
 
 /* style the footer */
