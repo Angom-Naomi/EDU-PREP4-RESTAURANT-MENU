@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOUL'S DINING</title>
     <link rel="stylesheet" type="text/css" href="/UI/css/menu.css">
-    <script src="./javascript/project.js"></script>
+    <script src="../javascript/menu.js"></script>
 </head>
 <body>
     <div class="container"> 
@@ -15,10 +15,10 @@
         <div>
             <div class="nav">        
              <a id="home" href="index.html">HOME</a>
-            <a id="login" href="login.html">LOG IN</a>
             <a id="menu" href="menu.html">MENU</a>
             <a id="gallery" href="gallery.html">GALLERY</a>
             <a id="contact" href="contact.html">CONTACT US</a>
+            <a id="login" href="index.html">LOG OUT</a>
             </div>
         </div>
     </div>
@@ -29,7 +29,7 @@
         <div class="top-content"> 
         <p>Make your order here (All prices in Ugshs)</p><br>
         <form action="./contact.html">
-            <input type="text" placeholder="Search.." id="searchBox">
+            <input type="text" placeholder="Search..." id="searchBox">
             <button type="submit" id="searchBtn" onclick="search()">Search</button> <br>
         </form>
         </div>
@@ -37,71 +37,84 @@
         <div class="left-content">
             <p>MEALS</p>
             <ul>
-                <li>Chicken...(20,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Beef...(20,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Fish...(25,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
+                <li class="item">Chicken</li>
+                <span class="price" >20,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
+                <li class="item">Beef</li>
+                <span class="price">20,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button>                
             </ul> <hr>
             <p>ACCOMPANIMENTS</p>
-            <ul>
-                <li>White rice or Pilao</li>
-                <li>Matooke or Irish potatoes </li>
-                <li>Posho or Millet bread (kalo)</li>
+            <ul> 
+                <li class="item">Rice and Irish potatoes</li>
+                <span class="price" >3,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
+                <li class="item">Matooke and Irish potatoes</li>
+                <span class="price">3,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
             </ul> <hr>
             <p>SALADS</p>
-            <ul>
-                <li>Greens and Avocado salad...(10,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Fruit salad...(10,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
+            <ul> 
+            <li class="item">Greens and Avocado salad</li>
+                <span class="price" >10,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
+                <li class="item">Fruit salad</li>
+                <span class="price">10,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
             </ul> 
         </div>
 
         <div class="right-content">
             <p>DRINKS</p>
-            <ul>
-                <li>Soda or Juice...(2,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Tea or Coffee...(2,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Water...(1,500)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
+            <ul> 
+                <li class="item">Soda </li>
+                <span class="price" >2,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
+                <li class="item">Tea</li>
+                <span class="price">2,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
             </ul> <hr>
+            
             <p>DESSERTS</p>
-            <ul>
-                <li>Cakes and Chocolate...(10,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Ice cream...(5,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
+            <ul> 
+                <li class="item">Cakes</li>
+                <span class="price" >10,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
+                <li class="item">Ice cream</li>
+                <span class="price">5,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
             </ul> <hr>
             <p>SNACKS</p>
-            <ul>
-                <li>Pizza...(25,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-                <li>Chapati, Samosa or Sausages...(1,000)</li>
-                <button type="submit" id="addBtn" onclick="addToMenu()">add</button>
-                <button type="submit" id="removeBtn" onclick="removeFromMenu()">remove</button><br>
-            </ul>
+            <ul> 
+                <li class="item">Pizza</li>
+                <span class="price" >20,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
+                <li class="item">Chapati</li>
+                <span class="price">1,000</span>
+                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
+            </ul> 
         </div>
-        </div>
-        <div class="bottom-content"> 
-            <button type="submit" id="orderBtn" onclick="makeOrder()">Make Order</button> 
-            <button type="reset" id="cancelBtn" onclick="cancel()">Cancel</button>
-        </div>
-
+        </div><hr>
+        <form class="make-order"> 
+            <h2>MY ORDER (Ugshs)</h1>
+            <div class="order-row">
+                <span class="order-item order-header order-column">Item</span>
+                <span class="order-price order-header order-column">Price</span>
+                <span class="order-qnty order-header order-column">Quantity</span>
+                <button type="button" class="btn removeBtn" onclick="removeFromMenu(event)">remove</button>         
+            </div>
+            <div class="order-item">
+        
+            </div>
+            <div class="order-total">
+                <div class="cart-total">
+                    <button onclick="makeOrder()" class="orderBtn" type="button">Make Order</button>
+                    <div>
+                    <strong class="total">TOTAL</strong>
+                    </div>
+        
+            </div>
+        </form>
     </div>
 
 
