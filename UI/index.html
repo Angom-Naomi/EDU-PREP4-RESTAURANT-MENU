@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUL'S DINING</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./javascript/project.js"></script>
+</head>
+<body>
+    <div class="container"> 
+    <!--Navigation bar on every page-->
+    <div class="navbar"> 
+            <img src="images/logo.jpg" alt="Logo" id="logo">
+        <div>
+            <div class="nav">        
+             <a id="home" href="index.html">HOME</a>
+            <a id="login" href="login.html">LOG IN</a>
+            <a id="menu" href="menu.html">MENU</a>
+            <a id="gallery" href="gallery.html">GALLERY</a>
+            <a id="contact" href="contact.html">CONTACT US</a>
+        </div>
+
+        </div>
+    </div>
+
+    <!--Main content containing about us and signup sections-->
+    <div class="content">
+        <div class="about"> 
+            <h1>SOUL'S DINING</h1>
+            <p>We don't just serve meals, but we listen to your heart.</p>
+            <p>Located in the heart of Kampala on Plot 37 Bel-Air Lane, we are the perfect stop for all your breakfast, lunch, dinner, snacks, deserts and drinks. </p>
+            <p> One cannot think well, love well or sleep well, if one has not dined well so...</p>
+            <p> “Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”
+            ― Ruth Reichl</p><br>
+            
+            <!-- audio for accesibility -->
+            <audio id="souls" controls> 
+                <source src="images/souls.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+     <!--Sign up section-->
+        <div class="signup">
+            <p>Create your free account</p>
+            <input type="text" id="name" placeholder="User name" data-type="text"><b>
+            <input type="text" id="email" placeholder="E-mail" data-type="email" required="true"><br>
+            <input type="password" id="password" placeholder="Password (8 characters)" minlength="8" data-type="password" required="true"><br>
+            <button type="submit" id="acc" onclick="createAccount()">Create Account</button><br>
+            <p>OR</p>
+            <button type="submit" id="gsignup" onclick="googleSignup()">Sign up with Google</button><br>
+            <button type="submit" id="fsignup" onclick="fbSignup()">Sign up with Facebook</button><br>
+        </div>
+    </div>
+
+
+<!--Footer on every page-->
+    <footer>
+        <p> &copy; 2020 Soul's Dining. All Rights Reserved. <br> <a href="https://www.facebook.com/">Facebook</a>
+            </p>
+    </footer>
+</div>
+</body>
+</html>

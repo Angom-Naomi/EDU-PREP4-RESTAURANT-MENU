@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOUL'S DINING</title>
+    <link rel="stylesheet" type="text/css" href="/UI/css/menu.css">
+    <script src="./javascript/project.js"></script>
+</head>
+<body>
+    <div class="container"> 
+<!--Navigation bar on every page-->
+    <div class="navbar"> 
+            <img src="/UI/images/logo.jpg" alt="Logo" id="logo">
+        <div>
+            <div class="nav">        
+             <a id="home" href="index.html">HOME</a>
+            <a id="login" href="login.html">LOG IN</a>
+            <a id="menu" href="menu.html">MENU</a>
+            <a id="gallery" href="gallery.html">GALLERY</a>
+            <a id="contact" href="contact.html">CONTACT US</a>
+            </div>
+        </div>
+    </div>
+
+<!--Page content-->
+    <div class="page-content"> 
+
+        <div class="top-content"> 
+        <p>Make your order here (All prices in Ugshs)</p><br>
+        <form action="./contact.html">
+            <input type="text" placeholder="Search.." id="searchBox">
+            <button type="submit" id="searchBtn" onclick="search()">Search</button> <br>
+        </form>
+        </div>
+        <div class="menu-content"> 
+        <div class="left-content">
+            <p>MEALS</p>
+            <ul>
+                <li>Chicken...(20,000)</li>
+                <li>Beef...(20,000)</li>
+                <li>Fish...(25,000)</li>
+                <li>Pork...(30,000)</li>
+                <li>Goat's meat...(30,000)</li>
+                <li>Beans or Peas...(15,000)</li>
+                <li>Groundnut sauce...(15,000)</li>
+            </ul> <hr>
+            <p>ACCOMPANIMENTS</p>
+            <ul>
+                <li>White rice or Pilao</li>
+                <li>Matooke </li>
+                <li>Posho or Millet bread (kalo)</li>
+                <li>Sweet potatoesor Cassava</li>
+                <li>Irish potatoes or Yams</li>
+                <li>Kachumbali</li>
+            </ul> <hr>
+            <p>SALADS</p>
+            <ul>
+                <li>Greens and Avocado salad...(10,000)</li>
+                <li>Fruit salad...(10,000)</li>
+            </ul> 
+        </div>
+
+        <div class="right-content">
+            <p>DRINKS</p>
+            <ul>
+                <li>Soda or Juice...(2,000)</li>
+                <li>Tea or Coffee...(2,000)</li>
+                <li>Water...(1,500)</li>
+                <li>Smoothie...(4,000)</li>
+            </ul> <hr>
+            <p>DESSERTS</p>
+            <ul>
+                <li>Cakes...(10,000)</li>
+                <li>Chocolate...(10,000)</li>
+                <li>Pie...(7,000)</li>
+                <li>Ice cream...(5,000)</li>
+                <li>Cookies...(3,000)</li>
+            </ul> <hr>
+            <p>SNACKS</p>
+            <ul>
+                <li>Pizza...(25,000)</li>
+                <li>Pasta or Spaghetti...(10,000)</li>
+                <li>Chapati or Samosa...(1,000)</li>
+                <li>Sausages or Chaps...(2,000)</li>
+                <li>French fries...(5,000)</li>
+                <li>Burger or Sandwich...(5,000)</li>
+            </ul>
+        </div>
+        </div>
+        <div class="bottom-content"> 
+            <button type="submit" id="orderBtn" onclick="makeOrder()">Make Order</button> 
+            <button type="reset" id="cancelBtn" onclick="cancel()">Cancel</button>
+        </div>
+
+    </div>
+
+
+<!--Footer on every page-->
+    <footer>
+        <p> &copy; 2020 Soul's Dining. All Rights Reserved. <br> <a href="https://www.facebook.com/">Facebook</a>
+            </p>
+    </footer>
+</div>
+</body>
+</html>
