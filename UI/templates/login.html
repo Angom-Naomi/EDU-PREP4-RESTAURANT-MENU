@@ -1,4 +1,3 @@
-<!--Coded by Jacinta-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,45 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOUL'S DINING</title>
     <link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script src="../javascript/login.js"></script>
 </head>
 <body>
-        <!--Navigation bar on every page-->
+    <div class="container"> 
+    <!--Navigation bar on every page-->
     <div class="navbar"> 
-        <img src="../images/logo.jpg" alt="Logo" id="logo">
-    <div>
-        <div class="nav">        
-         <a id="home" href="index.html">HOME</a>
-        <a id="login" href="login.html">LOG IN</a>
-        <a id="menu" href="menu.html">MENU</a>
-        <a id="gallery" href="gallery.html">GALLERY</a>
-        <a id="contact" href="contact.html">CONTACT US</a>
+            <img src="../images/logo.jpg" alt="Logo" id="logo">
+        <div>
+            <div class="nav">        
+                <a id="login" href="./login.html">LOG IN</a>
+                <a id="home" href="../index.html">HOME</a>
+                <a id="menu" href=" ">MENU</a>   <!--Empty href because users shouldn't access other pages unless they login succesfully-->
+            </div>
+        </div>
     </div>
 
+    <!--Main content containing about us and Log In sections-->
+    <div class="content">
+        <div class="about"> 
+            <h1>SOUL'S DINING</h1>
+            <p>We don't just serve meals, but we listen to your heart.</p>
+            <p>Located in the heart of Kampala on Plot 37 Bel-Air Lane, we are the perfect stop for all your breakfast, lunch, dinner, snacks, deserts and drinks. </p>
+            <p> One cannot think well, love well or sleep well, if one has not dined well so...</p>
+            <p> “Pull up a chair. Take a taste. Come join us. Life is so endlessly delicious.”
+            ― Ruth Reichl</p><br>
+            
+            <!-- audio for accesibility -->
+            <audio id="souls" controls> 
+                <source src="images/souls.mp3" type="audio/mpeg">
+            </audio>
+        </div>
+     <!--Log In section-->
+        <div class="login">
+            <p>Log In here</p>
+            <input type="text" id="name" placeholder="User name" data-type="text"><br>
+            <input type="password" id="password" placeholder="Password (8 characters)" minlength="8" data-type="password" required="true"><br>
+            <button type="submit" id="btnLogin" onclick="login()">Log In</button><br>
+        </div>
     </div>
-</div>
 
-    <div class="loginbox">
-    <form>
-        <h1>Login Here</h1>
-        <p>Username</p>
-        <input type="text" name="" placeholder="Enter Username">
-        <p>Password</p>
-        <input type="password" name="" placeholder="Enter Password">
-        <input type="submit" name="" value="Login">
-        <a href="#">Forgot password?</a><br>
-        <a href="#">Don't have an account?</a>
-    </form>
-</div>
 <!--Footer on every page-->
 <footer>
-    <p> &copy; 2020 Soul's Dining. All Rights Reserved. <br> <a href="https://www.facebook.com/">Facebook</a>
-        </p>
+    <div class="left-foot"> 
+        <p> &copy; 2020 Soul's Dining. All Rights Reserved.<p> <br>
+        <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="Facebook"></a><br>
+        <a href="https://www.twitter.com/"><img src="../images/twitter.png" alt="Twitter"></a><br>
+        <a href="https://www.github.com/"><img src="../images/github.png" alt="Github"></a><br>
+    </div>
+    <div class="middle-foot">
+        <strong>Contact Us</strong>
+        <p>info@soulsdining.com</p>
+        <p>+256 333 777 202</p>
+    </div>
+    <div class="right-foot">
+        <strong>Location</strong>
+        <p>Plot 37 Bel-Air Lane, Naguru</p>
+        <p>P.O Box 256 Kampala, Uganda</p>
+    </div>
 </footer>
+</div>
 </body>
 </html>
-
-
-
-
-
-
