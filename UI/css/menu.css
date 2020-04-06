@@ -44,6 +44,15 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 }
 
 /* style the main page content */
+<<<<<<< HEAD
+.page-content{
+    background-repeat: no-repeat;
+    background-image: repeating-linear-gradient(45deg,skyblue, gray, skyblue );   
+    background-size: cover;
+    display: flex;
+    height: 60%;
+    padding: 20px;
+=======
 .main-container{
     background: repeating-linear-gradient(45deg, skyblue, wheat, skyblue);
 }
@@ -59,6 +68,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 }
 
 .show{
+>>>>>>> ft-create-home-page-with-signup-172018175
     display: block;
 }
 
@@ -133,6 +143,15 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /* Heading of ITEM, PRICE, QUANTITY in Make order*/
 .order-header {
     font-size: 20px;
+<<<<<<< HEAD
+    font-weight: bold;
+    color: black;
+}
+
+.bottom-content{
+    width: 100%;
+    justify-content: center;
+=======
     color:black;
 }
 
@@ -149,6 +168,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /*ITEM, PRICE, QUANTITY heading in a horizontal row */
 .order-row {
     display: flex;
+>>>>>>> ft-create-home-page-with-signup-172018175
 }
 
 /*ITEM heading*/
