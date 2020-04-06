@@ -44,100 +44,223 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 }
 
 /* style the main page content */
-.page-content{
-    background-repeat: no-repeat;
-<<<<<<< HEAD
-    background-image: repeating-linear-gradient(45deg, maroon, gray, );   
-=======
-    background-image: repeating-linear-gradient(45deg,skyblue, gray, skyblue );   
->>>>>>> c99f6117d71ed4d1323be673e6035a60bef27c94
-    background-size: cover;
-    display: flex;
-    height: 60%;
-    padding: 20px;
+.main-container{
+    background: repeating-linear-gradient(45deg, skyblue, wheat, skyblue);
+}
+
+/* Search button */
+#search-food button{
+    margin-top: 20px;
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    color: white;
+    background-color:  rgb(25, 117, 117);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#search-food input{
+    width: 30%;
+    height: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border-color: rgb(25, 117, 117);
+}
+
+.show{
     display: block;
 }
 
-.top-content p{
-    font-size: medium;
+/* Headings of food categories */
+.section-header {
     font-weight: bold;
+    color: rgb(25, 117, 117);
     text-align: center;
     font-size: 20px;
+    text-decoration: underline;
 }
 
-#searchBox{
-    width: 50%;
-    height: 7%;
-    border:white;
-    border-style: solid;
-    padding: 3px;
-    float: left;
-}
-
-#searchBtn{
-width: 5%;
-padding: 3px;
-height: 7%;
-border-radius: 1%;
-border-color: black;
-background-color: wheat;
-}
-
-.left-content{
-    width: 50%;
-    float: left;
-}
-
-.right-content{
-    width: 50%;
-    float: right;
-}
-
-p {
-    text-align: justify;
-    line-height: 1.5;
-    font-size: 20px;   
-    font-weight: bold; 
-    color: black;
-}
-
-li{
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-<<<<<<< HEAD
-}
-
-.bottom-content{
-    width: 100%;
-    justify-content: center;
-    
-=======
->>>>>>> c99f6117d71ed4d1323be673e6035a60bef27c94
-}
-
-.addBtn, .removeBtn{
-    color: black;
-    font-weight: bold;
-    margin-bottom: 10px;
-    background-color: rgb(2, 158, 158);
+.btn {
+    text-align: center;
     padding: 5px;
-    border-radius: 15px;
-    width: 12%;
-
+    cursor: pointer;
 }
 
-
-.orderBtn{
-    color: black;
+/* All blue 'Add' buttons */
+.btn-primary {
+    color: white;
+    background-color: rgb(25, 117, 117) ;
+    border: none;
+    border-radius: 10px;
     font-weight: bold;
-    margin-bottom: 10px;
-    background-color: tomato;
-    padding: 10px;
-    border-radius: 15px;
-    width: 15%;
+}
+
+.btn-primary:hover {
+    background-color:skyblue;
+}
+
+.shop-item {
+    margin: 5px;
+}
+
+/* Food names */
+.shop-item-title {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    color:black;
+    margin-bottom: 15px;
+}
+
+/* Food photos */
+.shop-item-image {
+    height: 200px;
+    box-shadow: 0 0 20px grey;
+    border-radius: 10px;
+}
+
+/* Div for Add button and price */
+.shop-item-details {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color:black;
+}
+
+/* Each row of food items */
+.shop-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+            /* MAKE ORDER */
+/* Heading of ITEM, PRICE, QUANTITY in Make order*/
+.order-header {
+    font-size: 20px;
+    color:black;
+}
+
+/*ITEM, PRICE, QUANTITY heading in a vertical column */
+.order-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid tomato;
+    margin-right: 5px;
+    padding-bottom: 10px;
     margin-top: 10px;
-    margin-left: 400px;
+}
+
+/*ITEM, PRICE, QUANTITY heading in a horizontal row */
+.order-row {
+    display: flex;
+}
+
+/*ITEM heading*/
+.order-item {
+    width: 40%;
+    margin-left: 20px;
+}
+
+/* PRICE heading*/
+.order-price {
+    width: 20%;
+    font-size: 20px;
+    color: black;
+}
+
+/* QUANTITY heading*/
+.order-quantity {
+    width: 40%;
+}
+
+        /* HTML in menu.js file*/
+/* Name of added item */
+.order-item-title {
+    color:black;
+    margin-left: 5px;
+    font-size: 20px;
+} 
+
+/* Photo of added item */
+.order-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Remove button */
+.btn-danger {
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: red;
+}
+
+/* Quantity user inputs */
+.order-quantity-input {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid skyblue;
+    background-color: white;
+    color:black;
+    padding: 0;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 25px;
+}
+
+.order-row:last-child {
+    border-bottom: 1px solid black;
+}
+
+.order-row:last-child .order-column {
+    border: none;
+}
+
+.order-total {
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+ /* The word Total bill */
+.order-total-title {
+    font-weight: bold;
+    font-size: 20px;
+    color: tomato;
+    margin-right: 20px;
+}
+
+/* Amount of Total bill */
+.order-total-price {
+    color: tomato;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* Button Make order */
+.btn-makeOrder {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 30px;
+    background-color: tomato;
+}
+
+.btn-makeOrder:hover{
+    background-color: red;
 }
 
 /* style the footer */
@@ -145,8 +268,15 @@ footer{
     background-color: yellow;
     height: 20%;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
+    
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 /*media query for small devices like phones (responsiveness)*/
