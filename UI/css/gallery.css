@@ -43,17 +43,6 @@ body{
 color: green; /* Navbar anchors/links change to green on-mouse hover*/
 }
 
-.content{
-    display: block;
-}
-
-.content1, .content2, .content3{
-display: flex;
-background-repeat: no-repeat;
-width: 100%;
-
-}
-
 /* style the footer */
 footer{
     background-color: yellow;
@@ -77,3 +66,4 @@ footer img{
             height: 736px;       
         }
     }
+  
