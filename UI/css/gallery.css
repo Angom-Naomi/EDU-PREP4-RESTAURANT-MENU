@@ -43,68 +43,6 @@ body{
 color: green; /* Navbar anchors/links change to green on-mouse hover*/
 }
 
-/* style the main page content */
-.content{
-    background-repeat: no-repeat;
-    background-image: url(/UI/images/landingpic.jpg);
-    background-size: cover;
-    display: flex;
-    height: 60%;
-    padding: 20px;
-    display: flex;
-}
-
-.about{
-    margin-right: 20px;
-    justify-content: center;
-   
-}
-
-h1{
-    text-align: center;
-    text-decoration: underline;
-    font-style: italic;
-    font-size: 40px;
-}
-
-.about p {
-    text-align: justify;
-    line-height: 1.5;
-    font-size: 15px;
-    font-weight: bold;
-    
-}
-
-.login{
-    margin-left: 20px;
-    width: 30%;
-    }
-    
-.login p{
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-}
-.login input{
-    width: 100%;
-    height: 7%;
-    margin-bottom: 10px;
-    border:white;
-    border-style: solid;
-    padding: 3px;
-}
-
-.login button{
-color: black;
-font-weight: bold;
-margin-bottom: 10px;
-background-color: tomato;
-padding: 10px;
-border-radius: 15px;
-width: 60%;
-
-}
-
 /* style the footer */
 footer{
     background-color: yellow;
@@ -121,12 +59,6 @@ footer img{
     border-radius: 15px;
 }
 
-footer p{
-    font-size: 15px;
-    color: black;
-    font-weight: normal;
-}
-
 /*media query for small devices like phones (responsiveness)*/
 @media only screen and (max-width: 736px) {
     body {
@@ -134,3 +66,4 @@ footer p{
             height: 736px;       
         }
     }
+  

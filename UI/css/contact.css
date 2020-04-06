@@ -110,7 +110,30 @@ margin-top: 6px;
     
     }
     
+    /* style the footer */
+footer{
+    background-color: yellow;
+    height: 20%;
+    padding: 20px;
+    justify-content: space-around;
+    display: flex;
     
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+/*media query for small devices like phones (responsiveness)*/
+@media only screen and (max-width: 736px) {
+    body {
+            width: 300px;        
+            height: 736px;       
+        }
+    }
+  
     /*media query for small devices like phones (responsiveness)*/
     @media only screen and (max-width: 736px) {
         body {
