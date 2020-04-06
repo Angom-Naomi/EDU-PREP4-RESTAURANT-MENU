@@ -105,8 +105,21 @@ footer{
     background-color: yellow;
     height: 20%;
     padding: 20px;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
+    
+}
+
+footer img{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+}
+
+footer p{
+    font-size: 15px;
+    color: black;
+    font-weight: normal;
 }
 
 /*media query for small devices like phones (responsiveness)*/
