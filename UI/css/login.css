@@ -46,7 +46,7 @@ color: green; /* Navbar anchors/links change to green on-mouse hover*/
 /* style the main page content */
 .content{
     background-repeat: no-repeat;
-    background-image: url(/UI/images/landingpic.jpg);
+    background-image: url(../images/landingpic.jpg);
     background-size: cover;
     display: flex;
     height: 60%;
