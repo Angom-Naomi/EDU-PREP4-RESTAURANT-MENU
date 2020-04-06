@@ -5,123 +5,173 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SOUL'S DINING</title>
     <link rel="stylesheet" type="text/css" href="/UI/css/menu.css">
-    <script src="../javascript/menu.js"></script>
+    <script src="../javascript/menu.js" async></script>
 </head>
 <body>
-    <div class="container"> 
+<div class="main-container"> 
 <!--Navigation bar on every page-->
     <div class="navbar"> 
             <img src="/UI/images/logo.jpg" alt="Logo" id="logo">
         <div>
             <div class="nav">        
-             <a id="home" href="index.html">HOME</a>
+             <a id="home" href="../index.html">HOME</a>
             <a id="menu" href="menu.html">MENU</a>
-            <a id="gallery" href="gallery.html">GALLERY</a>
-            <a id="contact" href="contact.html">CONTACT US</a>
-            <a id="login" href="index.html">LOG OUT</a>
+            <a id="login" href="../index.html">LOG OUT</a>
             </div>
         </div>
     </div>
 
-<!--Page content-->
-    <div class="page-content"> 
-
-        <div class="top-content"> 
-        <p>Make your order here (All prices in Ugshs)</p><br>
-        <form action="./contact.html">
-            <input type="text" placeholder="Search..." id="searchBox">
-            <button type="submit" id="searchBtn" onclick="search()">Search</button> <br>
-        </form>
-        </div>
-        <div class="menu-content"> 
-        <div class="left-content">
-            <p>MEALS</p>
-            <ul>
-                <li class="item">Chicken</li>
-                <span class="price" >20,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
-                <li class="item">Beef</li>
-                <span class="price">20,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button>                
-            </ul> <hr>
-            <p>ACCOMPANIMENTS</p>
-            <ul> 
-                <li class="item">Rice and Irish potatoes</li>
-                <span class="price" >3,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
-                <li class="item">Matooke and Irish potatoes</li>
-                <span class="price">3,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
-            </ul> <hr>
-            <p>SALADS</p>
-            <ul> 
-            <li class="item">Greens and Avocado salad</li>
-                <span class="price" >10,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
-                <li class="item">Fruit salad</li>
-                <span class="price">10,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
-            </ul> 
-        </div>
-
-        <div class="right-content">
-            <p>DRINKS</p>
-            <ul> 
-                <li class="item">Soda </li>
-                <span class="price" >2,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
-                <li class="item">Tea</li>
-                <span class="price">2,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
-            </ul> <hr>
-            
-            <p>DESSERTS</p>
-            <ul> 
-                <li class="item">Cakes</li>
-                <span class="price" >10,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
-                <li class="item">Ice cream</li>
-                <span class="price">5,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
-            </ul> <hr>
-            <p>SNACKS</p>
-            <ul> 
-                <li class="item">Pizza</li>
-                <span class="price" >20,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button><br>
-                <li class="item">Chapati</li>
-                <span class="price">1,000</span>
-                <button type="button" class="addBtn" onclick="addToMenu()">add</button>         
-            </ul> 
-        </div>
-        </div><hr>
-        <form class="make-order"> 
-            <h2>MY ORDER (Ugshs)</h1>
-            <div class="order-row">
-                <span class="order-item order-header order-column">Item</span>
-                <span class="order-price order-header order-column">Price</span>
-                <span class="order-qnty order-header order-column">Quantity</span>
-                <button type="button" class="btn removeBtn" onclick="removeFromMenu(event)">remove</button>         
+<!--Page content / menu-->
+<form id="search-food">
+    <input type="text" id="myInput" onkeyup="search()" placeholder="Search here..." />
+</form>
+<section class="container content-section">
+    <h2 class="section-header">MEALS & ACCOMPANIMENTS</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Chicken</span>
+            <img class="shop-item-image" src="../images/chicken.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">15000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
             </div>
-            <div class="order-item">
-        
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Beef</span>
+            <img class="shop-item-image" src="../images/pic6.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">15000 Ugx</span>
+                <button class="btn btn-primary shop-item-button"type="button">Add</button>
             </div>
-            <div class="order-total">
-                <div class="cart-total">
-                    <button onclick="makeOrder()" class="orderBtn" type="button">Make Order</button>
-                    <div>
-                    <strong class="total">TOTAL</strong>
-                    </div>
-        
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Rice and Irish potatoes</span>
+            <img class="shop-item-image" src="../images/rice.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">3000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
             </div>
-        </form>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Matooke and Irish potatoes</span>
+            <img class="shop-item-image" src="../images/matooke.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">3000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
     </div>
+</section><hr>
+<section class="container content-section">
+    <h2 class="section-header">SALADS & SNACKS</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Avocado and vegetable salad</span>
+            <img class="shop-item-image" src="../images/avocado.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">10000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Fruit salad</span>
+            <img class="shop-item-image" src="../images/fruit.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">10000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Pizza</span>
+            <img class="shop-item-image" src="../images/pizza.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">25000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Chapati</span>
+            <img class="shop-item-image" src="../images/chapati.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">1000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+    </div>
+</section><hr>
+<section class="container content-section">
+    <h2 class="section-header">DRINKS & DESSERTS</h2>
+    <div class="shop-items">
+        <div class="shop-item">
+            <span class="shop-item-title">Soda</span>
+            <img class="shop-item-image" src="../images/soda.jpeg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">2000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Tea</span>
+            <img class="shop-item-image" src="../images/tea.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">2000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Cakes</span>
+            <img class="shop-item-image" src="../images/cake.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">5000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+        <div class="shop-item">
+            <span class="shop-item-title">Ice cream</span>
+            <img class="shop-item-image" src="../images/ice cream.jpg">
+            <div class="shop-item-details">
+                <span class="shop-item-price">5000 Ugx</span>
+                <button class="btn btn-primary shop-item-button" type="button">Add</button>
+            </div>
+        </div>
+    </div>
+</section><hr>
+<section class="container content-section">
+    <h2 class="section-header">MAKE ORDER</h2>
+    <div class="order-row">
+        <span class="order-item order-header order-column">ITEM</span>
+        <span class="order-price order-header order-column">PRICE</span>
+        <span class="order-quantity order-header order-column">QUANTITY</span>
+    </div>
+    <div class="order-items">
+    </div>
+    <div class="order-total">
+        <strong class="order-total-title">Total bill</strong>
+        <span class="order-total-price">0 Ugx</span>
+    </div>
+    <button class="btn btn-primary btn-makeOrder" type="button">MAKE ORDER</button>
+</section>
 
 
 <!--Footer on every page-->
     <footer>
-        <p> &copy; 2020 Soul's Dining. All Rights Reserved. <br> <a href="https://www.facebook.com/">Facebook</a>
-            </p>
+        <div class="left-foot"> 
+            <p> &copy; 2020 Soul's Dining. All Rights Reserved.<p> <br>
+            <a href="https://www.facebook.com/"><img src="../images/facebook.png" alt="Facebook"></a><br>
+            <a href="https://www.twitter.com/"><img src="../images/twitter.png" alt="Twitter"></a><br>
+            <a href="https://www.github.com/"><img src="../images/github.png" alt="Github"></a><br>
+        </div>
+        <div class="middle-foot">
+            <strong>Contact Us</strong>
+            <p>info@soulsdining.com</p>
+            <p>+256 333 777 202</p>
+        </div>
+        <div class="right-foot">
+            <strong>Location</strong>
+            <p>Plot 37 Bel-Air Lane, Naguru</p>
+            <p>P.O Box 256 Kampala, Uganda</p>
+        </div>
+
     </footer>
 </div>
 </body>
